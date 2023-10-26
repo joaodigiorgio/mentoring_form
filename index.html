@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Mentoring</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+        <header>
+            <h1>Mentoring</h1> 
+             
+            <p>Fill out the form below to schedule your mentoring</p>
+        </header>
+        <div class="container">
+        <form id="my_form">
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Personal information</legend>
+                    <div id="line">
+                    </div>
+
+
+                    <div class="col_1">
+                    <div class="input-wrapper">
+                        <label for="participant-name">Name</label>
+                        <input
+                        type="text"
+                        id="participant-name"
+                        required />
+                    </div>
+            
+
+                    <div class="input-wrapper">
+                        <label for="participant-surname">Surname</label>
+                        <input 
+                        type="text"
+                        id="participant-surname"
+                        required />
+                    </div>
+                </div>
+
+                    <div class="input-wrapper">
+                        <label for="participant-email">E-mail<span>(type a valid E-mail)</span></label>
+                        <input type="email"
+                        id="participant-email"
+                        required />
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="participant-password">Password<span>(minimum 6 characters)</span></label>
+                        <input type="password" 
+                        id="participant-password"
+                        required />
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                <legend>Mentor information</legend>
+
+                <div id="line">
+                </div>
+
+
+                <div class="input-wrapper">
+                    <label for="mentor-name">Name of your mentor<span>(only the first name)</span></label>
+                    <input type="text"
+                    id="mentor-name" 
+                    required/>
+                </div>
+              </div>
+            </fieldset>
+            
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Your available times</legend>
+
+                    <div id="line">
+                    </div>
+
+
+                    <h3>First mentoring</h3>
+
+            <div class="col_3">
+                    
+                <div class="input-wrapper">
+                    <label for="event-date-1">Date<span>(DD/MM/YY)</span></label>
+                    <input type="date"
+                    id="event-date"
+                    required />
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="event-begin-1">From</label>
+                    <input type="time"
+                    id="event-begin"
+                    required />
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="event-end-1">To</label>
+                    <input type="time"
+                    id="event-end"
+                    required />
+                </div>
+            </div>
+
+                    <h3>Second mentoring</h3>
+
+            <div class="col_4">
+
+                <div class="input-wrapper">
+                        <label for="event-date">Date<span>(DD/MM/YY)</span></label>
+                        <input type="date"
+                        id="event-date"/>
+                </div>
+    
+                <div class="input-wrapper">
+                        <label for="event-begin">From</label>
+                        <input type="time"
+                        id="event-begin"/>
+                </div>
+    
+                <div class="input-wrapper">
+                        <label for="event-end">To</label>
+                        <input type="time"
+                        id="event-end"/>
+                </div>    
+            </div>
+
+
+                </div>
+            </fieldset>
+        </form>
+
+        <footer>
+            <input class="button"
+            type="submit"
+            form="my_form"
+            value="Save">
+        </footer>
+    </div>
+</div>
+</body>
+</html>
